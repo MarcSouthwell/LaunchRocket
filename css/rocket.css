@@ -19,10 +19,12 @@
 .rocket {
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
-	width: 20px;
-	height: 100px;
-	background-color: red;
+	bottom: -45px;
+	width: 287px;
+	height: 554px;
+	margin-left: -65px;
+	/*background-color: red;*/
+	background: url('../img/noState.png') no-repeat 0 0;
 	transition: bottom 10000ms;
 }
 
@@ -43,10 +45,24 @@ body.body-state1 .rocket{
 	transition: none;
 }
 
+/*Rocket bg image*/
+body.body-state2 .rocket{
+	background-image: url('../img/lowState.png');
+}
+
 body.body-state3 .rocket,
 body.body-state4 .rocket
 {
+	background-image: url('../img/highState.png');
 	bottom: 1000px;
+}
+
+body.body-state5 .rocket{
+	background-image: url('../img/boom.png');
+	width: 287px;
+	height: 401px;
+	margin-left: -145px;
+	bottom: 40px;
 }
 
 .state1,.state2,.state3,.state4,.state5{
