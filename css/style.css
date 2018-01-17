@@ -1,0 +1,26 @@
+body{
+	background-color: grey;
+}
+
+.cool{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	transition: background-color 2s;
+}
+
+.cool.red{
+	background-color: red;
+}
+
+
+.dropdown{
+	visibility: visible;
+	width: 100px;
+}
+
+.dropdown.up{
+	visibility: hidden;
+	width: 100px;
+	height: 0px;
+}
